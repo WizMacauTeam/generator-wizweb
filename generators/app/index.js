@@ -26,52 +26,57 @@ module.exports = yeoman.Base.extend({
         checked: false
       }, {
         name: 'react',
-        value: 'includeModernizr',
+        value: 'includeReact',
         checked: false
       }]
     }, {
       name: 'name',
       message: 'project Name',
-      default:  path.basename(this.destinationRoot())
+      default: path.basename(this.destinationRoot())
     }, {
       name: 'description',
       message: 'Description',
       default: 'The project description.'
     }, {
       name: 'homepage',
-      message: 'Homepage'
+      message: 'Homepage',
+      default: 'wizmacau.com'
     }, {
       name: 'license',
       message: 'License',
       default: 'MIT'
     }, {
-      name: 'githubUsername',
-      message: 'GitHub username'
-    }, {
       name: 'authorName',
-      message: 'Author\'s Name'
+      message: 'Author\'s Name',
+      default: 'wizmacau'
     }, {
       name: 'authorEmail',
-      message: 'Author\'s Email'
+      message: 'Author\'s Email',
+      default: 'info@wizmacau.com'
     }, {
       name: 'authorUrl',
-      message: 'Author\'s Homepage'
+      message: 'Author\'s Homepage',
+      default: 'wizmacau.com'
     }];
 
     return this.prompt(prompts).then(function(props) {
       // To access props later use this.props.someAnswer;
+
       this.props = props;
     }.bind(this));
   },
 
   writing: {
-    packageJSON: function () {
+    packageJSON: function() {
       this.fs.copyTpl(
         this.templatePath('_package.json'),
-        this.destinationPath('package.json'),
-        {
-          includeSass: this.includeSass,
-          includeBabel: this.options['babel']
+        this.destinationPath('package.json'), {
+          appName: this.name,
+          homepage: this.homepage,
+          description: this.description,
+          authorName: this.authorName,
+          authorEmail: this.authorEmail,
+          includeSass: this.includeSass
         }
       );
     },
@@ -122,7 +127,7 @@ module.exports = yeoman.Base.extend({
     }
   },
 
-  install: function() {
-    this.installDependencies();
-  }
+  // install: function() {
+  //   this.installDependencies();
+  // }
 });
