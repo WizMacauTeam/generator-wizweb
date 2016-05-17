@@ -1,6 +1,6 @@
 {
   "name": "generator-wizweb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "homepage": "",
   "author": {
@@ -13,7 +13,7 @@
   ],
   "main": "generators/index.js",
   "keywords": [
-    "gemer",
+    "wizweb generator",
     "yeoman-generator"
   ],
   "dependencies": {
@@ -43,7 +43,7 @@
       "mocha": true
     }
   },
-  "repository": "gemerz/generator-wizweb",
+  "repository": "WizMacauTeam/generator-wizweb",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
