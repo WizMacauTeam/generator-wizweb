@@ -1,5 +1,5 @@
 # generator-wizweb [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> 
+>
 
 ## Installation
 
@@ -30,9 +30,9 @@ Apache-2.0 © [Gemer]()
 
 [npm-image]: https://badge.fury.io/js/generator-wizweb.svg
 [npm-url]: https://npmjs.org/package/generator-wizweb
-[travis-image]: https://travis-ci.org/gemerz/generator-wizweb.svg?branch=master
-[travis-url]: https://travis-ci.org/gemerz/generator-wizweb
-[daviddm-image]: https://david-dm.org/gemerz/generator-wizweb.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/gemerz/generator-wizweb
-[coveralls-image]: https://coveralls.io/repos/gemerz/generator-wizweb/badge.svg
-[coveralls-url]: https://coveralls.io/r/gemerz/generator-wizweb
+[travis-image]: https://travis-ci.org/WizmacauTeam/generator-wizweb.svg?branch=master
+[travis-url]: https://travis-ci.org/WizmacauTeam/generator-wizweb
+[daviddm-image]: https://david-dm.org/WizmacauTeam/generator-wizweb.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/WizmacauTeam/generator-wizweb
+[coveralls-image]: https://coveralls.io/repos/WizmacauTeam/generator-wizweb/badge.svg
+[coveralls-url]: https://coveralls.io/r/WizmacauTeam/generator-wizweb
